@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+body {   
+    background-color: black;    
+}
+
+.cabecalho h1 {
+    margin-top: 15px;
+    font-size: 45px;
+}
+
+.cabecalho h1, .cabecalho p {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+    
+}
+
+form {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+   
+        
+}
+fieldset {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 10px;   
+}
+fieldset legend {
+    background-color: rgba(210, 0, 0, 1);
+    color: white;
+    padding: 5px;
+    border: 1px solid rgba(210, 0, 0, 1);
+    border-radius: 10px;
+    font-weight: bolder;
+    
+}
+label {
+    display: block;
+    margin: 10px;
+    font-weight: bold;
+}
+label input{
+    padding: 5px;
+    border: 1px solid black;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+label #inumero {
+    width: 70px;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(210, 0, 0, 1);
+    color: white;
+}
+.botao:hover {
+    background-color: red;
+}
+fieldset #sexualidade {
+    display: none;
+}
+
+@media screen and (max-width: 418px) {
+    * {
+        font-size: 15px;
+    }
+    fieldset #sexo {
+        display: none;
+    }
+    fieldset #sexualidade {
+        display: block;
+    }
+}

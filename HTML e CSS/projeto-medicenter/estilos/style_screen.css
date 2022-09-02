@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 940px) {
+    nav a {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    #geral {
+        padding: 8px;
+    }
+    .banner_headline h1 {
+        margin-right: 280px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    .footer_address {
+        flex-direction: column;
+    }
+    .footer_address address {
+        flex: 0;
+    }
+    .flexcolumn {        
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+
+@media screen and (max-width: 666px) {
+
+    
+    .banner {
+        background-image: none;
+    }
+    .banner_headline {
+        background-image: url(../imagens/img1.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;    
+        background-size: cover;
+        width: 100%;
+        
+    }
+   
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_headline h1 {
+        font-size: 35px;
+        margin-left: 5px;
+    }
+    .banner_headline h2 {
+        font-size: 14px;
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    .banner_options, .footer_menu, .footer_area {
+        height: auto;
+        flex-direction: column;
+    }    
+    
+    .footer_desc {
+        margin-bottom: 0px;
+    }
+    .footer_area-item01 {
+        order: 2;
+    }
+    .footer_area-item02 {
+        order: 0;
+    }
+    .footer_area-item03 {
+        order: 1;
+    }   
+    
+}
+
+
+
+@media screen and (max-width: 600px) { 
+    
+    .logo {
+        margin-top: 10px;
+    }
+    .banner_headline {        
+        background-position:  top center;
+        width: 100%; 
+    }
+   
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;    
+        width: 100%;
+        left: 0;
+        background-color: white;
+    }
+    header {
+        height: auto;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }    
+       
+}
+
+
+@media screen and (max-width: 320px) {
+    .container > section {
+        margin-left: 20px;
+    }  
+    .banner_headline {        
+        width: 300px;
+    } 
+    .deparments_body div {        
+        width: 100px;
+        height: 100px;
+    }
+}
